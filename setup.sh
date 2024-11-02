@@ -43,13 +43,14 @@ cd dots/.config/
 cp -r ~/dots/.config* ~/.config 
 rm -r dots
 
-## Xinit ## 
+## Xinit ##
 cd ~/
 
+# Create the .xinitrc file with the desired content
 cat << EOF > .xinitrc
 xrandr --output DP-0 --mode 1920x1080 --rate 144 &
 exec dwm
-xrandr --output DP-0 --mode 1920x1080 --rate 144 &
 EOF
 
-chmod u+x .xinitrc
+# Make .xinitrc executable
+chmod +x .xinitrc
