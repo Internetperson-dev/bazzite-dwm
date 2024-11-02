@@ -37,3 +37,14 @@ mkdir -p ~/.local/bin
 cp -r ~/dots/.local/bin/* ~/.local/bin/ # What am I even doing with my life?
 cd ~/
 rm -r dots
+
+## Xinit ## 
+cd ~/
+
+cat << EOF > .xinitrc
+xrandr --output DP-0 --mode 1920x1080 --rate 144 &
+exec dwm
+xrandr --output DP-0 --mode 1920x1080 --rate 144 &
+EOF
+
+chmod u+x .xinitrc
