@@ -46,11 +46,10 @@ rm -r dots
 ## Xinit ##
 cd ~/
 
-# Create the .xinitrc file with the desired content
 cat << EOF > .xinitrc
 xrandr --output DP-0 --mode 1920x1080 --rate 144 &
 exec dwm
 EOF
 
-# Make .xinitrc executable
+## Make .xinitrc executable ##
 chmod +x .xinitrc
