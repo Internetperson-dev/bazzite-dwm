@@ -28,14 +28,19 @@ sudo make install
 
 pip install pulsemixer
 
-## Install scripts ##
+## Install scripts  ##
 
 cd ~/
 git clone https://github.com/Internetperson-dev/dots/
 cd dots/.local/
 mkdir -p ~/.local/bin
 cp -r ~/dots/.local/bin/* ~/.local/bin/ # What am I even doing with my life?
+
+## Install config ##
+
 cd ~/
+cd dots/.config/
+cp -r ~/dots/.config* ~/.config 
 rm -r dots
 
 ## Xinit ## 
